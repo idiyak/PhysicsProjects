@@ -1,4 +1,15 @@
 # Idil Yaktubay and Maheen Mufti - The Milikan Experiment 
+"""
+n this experiment, the behavior of charged oil drops was studied in order 
+to demonstrate the quantization of charge by experimentally finding the 
+value of the elementary charge e. For 52 oil droplets, by measuring the 
+terminal falling velocity of each charged droplet in an electric field-free 
+space and the stopping voltage of the same droplet in a uniform electric 
+field, the value of e was found to be (1.616+- 0.017) x 10^-19 C. 
+This value was found to agree to within 0.87% of the theoretical 
+value of 1.602 x 10^-19 C, thus through the experimental method 
+employed the constant was successfully determined.
+"""
 
 import numpy as np 
 import matplotlib.pyplot as plt
