@@ -1,7 +1,11 @@
 """
 Author: Idil Yaktubay
 
-In this experiment, the collisions between vaporized mercury atoms and a beam of electrons were studied in order to determine the energy required to excite a mercury atom. By measuring the current set up by the incident electrons across different accelerating voltages, the energy required to excite vaporized mercury atoms was found to be 5.1 eV +- 0.8 eV. This value was found to agree within one uncertainty interval of the theoretical value of 4.9 eV.
+In this experiment, the collisions between vaporized mercury atoms and a beam of electrons 
+were studied in order to determine the energy required to excite a mercury atom. By measuring 
+the current set up by the incident electrons across different accelerating voltages, 
+the energy required to excite vaporized mercury atoms was found to be 5.1 eV +- 0.8 eV. 
+This value was found to agree within one uncertainty interval of the theoretical value of 4.9 eV.
 """
 
 import numpy as np 
