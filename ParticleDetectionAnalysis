@@ -1,5 +1,7 @@
 # Author: Idil Yaktubay
 # February 7th 2022
+# Particle Detection
+
 import pickle
 import matplotlib.pyplot as plt
 import numpy as np
