@@ -1,6 +1,6 @@
 # Idil Yaktubay and Maheen Mufti - The Milikan Experiment 
 """
-n this experiment, the behavior of charged oil drops was studied in order 
+In this experiment, the behavior of charged oil drops was studied in order 
 to demonstrate the quantization of charge by experimentally finding the 
 value of the elementary charge e. For 52 oil droplets, by measuring the 
 terminal falling velocity of each charged droplet in an electric field-free 
