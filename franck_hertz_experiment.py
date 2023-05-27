@@ -1,9 +1,6 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
-Created on Tue Mar  8 22:14:28 2022
-
-@author: souren
+DATA ANALYSIS FOR FRANCK-HERTZ EXPERIMENT
+Author: Idil Yaktubay
 """
 
 import numpy as np 
