@@ -1,7 +1,7 @@
 # Idil Yaktubay and Maheen Mufti - Charge to Mass Ratio Experiment
 """
 In this experiment, the behavior of a beam of electrons in uniform magnetic
- fields perpendicular to the electron velocity was studied in order to 
+fields perpendicular to the electron velocity was studied in order to 
 determine the charge to mass ratio of an electron. By accelerating a 
 beam of electrons through a constant potential difference, placing the 
 beam in various uniform magnetic fields induced by different currents
