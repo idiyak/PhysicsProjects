@@ -1,7 +1,12 @@
 # Author: Idil Yaktubay
 # February 7th 2022
 # Particle Detection
-
+"""
+The goal of this project is to convert the raw data from a particle detection
+experiment to an energy spectrum with computational techniques. 
+The raw data is collected by a detector that converts the energy of 
+incident particles into a signal of voltage with respect to time.
+"""
 import pickle
 import matplotlib.pyplot as plt
 import numpy as np
