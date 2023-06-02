@@ -1,0 +1,46 @@
+"""
+For a project on viewer engagement on educational videos, we work with a
+dataset put together by a researcher (Sahan Bulathwela) at University College London. 
+The goal of the project was to predict how engaging an educational video would be for
+viewers based on the features of its transcript. To achieve the goal, we
+implemented a supervised machine learning model in Python that used a training set to predict 
+each video in the test set as engaging/not engaging based on a predetermined standard. 
+The model ended up having an AUC score of 0.86, meaning that 86% of the predictions were correct.
+"""
+import warnings
+warnings.filterwarnings("ignore")
+
+import os
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+def engagement_model():
+    rec = None
+    
+    # YOUR CODE HERE
+    from sklearn.neural_network import MLPClassifier
+    from sklearn.preprocessing import StandardScaler
+    
+    scaler = StandardScaler()
+    
+    train_set = pd.read_csv('assets/train.csv')
+    train_set = train_set.set_index('id')
+    train_set = train_set.drop('normalization_rate', axis=1)
+    X_train = train_set.iloc[:, : -1]
+    y_train = train_set.iloc[:, -1]
+    
+    test_set = pd.read_csv('assets/test.csv')
+    test_set = test_set.set_index('id')
+    X_test = test_set.drop('normalization_rate', axis=1)
+    
+    X_train_scaled = scaler.fit_transform(X_train)
+    X_test_scaled = scaler.transform(X_test)
+    
+    clf = MLPClassifier(hidden_layer_sizes=[20, 20], alpha=5, solver='lbfgs', random_state=0, activation='logistic').fit(X_train_scaled, y_train)
+    predict_proba = clf.predict_proba(X_test_scaled)[:, 1]
+    test_set['engagement'] = predict_proba
+    rec=test_set['engagement']
+    
+    return rec
+engagement_model()
